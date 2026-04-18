@@ -57,16 +57,18 @@
 			</plugin>
 		</plugins>
 		<resources>
+			<!--First: Copy all resources-->
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+			</resource>
+			<!--Then: Copy (and overwrite) all resources that match the pattern and filter them-->
 			<resource>
 				<directory>src/main/resources</directory>
 				<filtering>true</filtering>
 				<includes>
 					<include>**/*.yml</include>
 				</includes>
-			</resource>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>false</filtering>
 			</resource>
 		</resources>
 	</build>
