@@ -75,30 +75,27 @@
 
 	<repositories>
 		<repository>
+			<id>bluecolored-releases</id>
+			<name>BlueColored Repository</name>
+			<url>https://repo.bluecolored.de/releases</url>
+		</repository>
+		<repository>
 			<id>papermc-repo</id>
 			<url>https://repo.papermc.io/repository/maven-public/</url>
-		</repository>
-		<repository>
-			<id>sonatype</id>
-			<url>https://oss.sonatype.org/content/groups/public/</url>
-		</repository>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 
 	<dependencies>
 		<dependency>
-			<groupId>com.github.TechnicJelle</groupId>
-			<artifactId>UpdateCheckerJava</artifactId>
-			<version>v2.3</version>
+			<groupId>com.technicjelle</groupId>
+			<artifactId>UpdateChecker</artifactId>
+			<version>2.5.1</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.github.TechnicJelle</groupId>
+			<groupId>com.technicjelle</groupId>
 			<artifactId>BMUtils</artifactId>
-			<version>v1.1</version>
+			<version>5.0.4</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
@@ -108,15 +105,16 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.github.BlueMap-Minecraft</groupId>
-			<artifactId>BlueMapAPI</artifactId>
-			<version>2.7.0</version>
+			<groupId>de.bluecolored</groupId>
+			<artifactId>bluemap-api</artifactId>
+			<version>2.7.8</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.github.BlueMap-Minecraft</groupId>
-			<artifactId>BlueNBT</artifactId>
-			<version>v1.3.0</version>
+			<groupId>de.bluecolored</groupId>
+			<artifactId>bluenbt</artifactId>
+			<version>3.5.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.bstats</groupId>
