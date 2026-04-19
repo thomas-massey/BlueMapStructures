@@ -49,7 +49,7 @@ public class Core {
 						.position(new Vector3d(structureChunk.getX() * 16, 64, structureChunk.getY() * 16))
 						.build();
 
-				final MarkerSet markerSet = map.getMarkerSets().computeIfAbsent("structures", id -> MarkerSet.builder().label("Structures").toggleable(true).defaultHidden(false).build());
+				final MarkerSet markerSet = map.getMarkerSets().computeIfAbsent("structures", id -> MarkerSet.builder().label("Structures").toggleable(true).defaultHidden(true).build());
 
 				markerSet.put(structureChunk.toString(), poiMarker);
 			}
